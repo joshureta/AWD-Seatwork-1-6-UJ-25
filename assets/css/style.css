@@ -12,6 +12,16 @@
 .content-div{
     padding: 20px;
 }
+.content-div{
+    background-color: #f4f4f4;
+    background-image: url("photographer.jpg");
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /*footer*/
 .footer-div{
     background-color: #333;
