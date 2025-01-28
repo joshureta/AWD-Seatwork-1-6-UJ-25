@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Management System</title>
+    <!------CSS Link-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-------JS Link-->
+    <script src ="assets/js/scripts.js"></script>
+</head>
+<body>
+    <!----Navbar-->
+    <div class = "navbar-div">
+        <ul>
+            <li><a class="active" href="../../index.html">Home</a></li>
+            <li><a href="./index.html">GWA Calculator</a></li>
+          </ul>
+    </div>
+    <!---content-->
+    <div class ="content-div">
+    <!---TODO:DEMO-->
+    <h2>Grade Management System</h2>
+    <div class ="Input">
+    <label for="name">Student Name:</label>
+    <input type="text" id="name" required>
+    <br><br>
+    <label for="grades">Enter 5 Grades:</label>
+    <input type="text" id="grades" placeholder="85, 90, 78, 92, 88" required>
+    <br><br>
+    <button onclick="calculateGWA()">Calculate GWA</button>
+    </div>
+    <table id="resultTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Grades</th>
+                <th>GWA</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    </div>
+    <!----footer-->
+    <div class ="footer-div">
+        <p>Joshua Gabriel P. Ureta|202311379 &copy; 2025</p>
+    </div>
+</body>
+</html>
