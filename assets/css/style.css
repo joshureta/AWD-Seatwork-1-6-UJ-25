@@ -22,6 +22,28 @@
     background-position: center;
     justify-content: space-around;
 }
+.text-div{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #fff;
+    float:left;
+    width: 50%;
+}
+.image-div{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #fff;
+    float:right;
+    height: 50%;
+    width: 30%;
+}
+.image-div img{
+    width: 20%;
+    height: 40%;
+}
 /*footer*/
 .footer-div{
     background-color: #333;
