@@ -10,17 +10,17 @@
 }
 /*content*/
 .content-div{
-    padding: 20px;
+    padding: 20%;
 }
 .content-div{
     background-color: #f4f4f4;
-    background-image: url("photographer.jpg");
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-    height: 100%;
-    background-position: center;
+    background-image: url("../../assets/img/FEU_background.jpg");
+    height: 30%;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
+    background-position: center;
+    justify-content: space-around;
 }
 /*footer*/
 .footer-div{
