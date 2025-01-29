@@ -49,10 +49,35 @@ ul {
     background-size: cover;
     background-position: center;
     width: 86%;
-    padding: 15%;
+    padding: 6%;
     width: auto;
     height: auto;
     background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+h2{
+  color: yellow;
+  font-size: 80px;
+}
+input, button {
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+}
+input {
+  background-color: yellow;
+  color: #1b5e20;
+  border: 2px solid darkgreen;
+}
+button {
+  background: linear-gradient(90deg, green, darkgreen );
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover {
+  background: linear-gradient(90deg, #43a047, #2e7d32);
 }
 table {
   width: 100%;
@@ -60,12 +85,13 @@ table {
   margin-top: 20px;
 }
 th, td {
-  border: 1px solid black;
-  padding: 10px;
+  border: 2px solid green;
+  padding: 20px;
   text-align: center;
+  color: yellow;
 }
 /*footer*/
 .footer-div{
     background-color: black;
-    padding:20px;
+    padding: 20px;
 }
