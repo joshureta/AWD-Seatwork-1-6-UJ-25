@@ -2,23 +2,25 @@
     margin:0;
     padding:0;
     font-family: Arial;
+    color: whitesmoke
 }
 /*Navbar*/
 .navbar-div{
-    background-color: green;
+  background-color: black;
     padding: 1px;
-
 }
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color:green;
+    background-color: BLACK;
   }
   
   li {
     float: left;
+    padding-top: 1%;
+    padding-left: 2%;
   }
   
   li a {
@@ -27,25 +29,43 @@ ul {
     text-align: center;
     padding: 15px 10px;
     text-decoration: none;
+    color: yellow;
   }
   
   li a:hover {
-    background-color: yellowgreen;
+    border-bottom: 3px solid green;
   }
+.logo img{
+    float: right;
+    width: 5%;
+    height: 5%;
+}
 /*content*/
 .content-div{
-    padding: 30%;
-    display: flex;
-    flex-direction: row;
-    display:flex;
-    width: 85%;
-    height: 50px;
+    background-image: url("../img/FEUBG2.png");
+    height: 30%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    width: 86%;
+    padding: 15%;
+    width: auto;
+    height: auto;
     background-color: rgba(0, 0, 0, 0.5);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
 }
 /*footer*/
 .footer-div{
-    background-color: green;
-    color: #fff;
-    padding:25px;
-    text-align: center;
+    background-color: black;
+    padding:20px;
 }

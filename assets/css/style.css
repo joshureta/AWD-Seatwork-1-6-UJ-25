@@ -5,20 +5,21 @@
 }
 /*Navbar*/
 .navbar-div{
-    background-color: green;
+    background-color: black;
     padding: 1px;
-
 }
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color:green;
+    background-color:black;
   }
   
   li {
     float: left;
+    padding-top: 1%;
+    padding-left: 2%;
   }
   
   li a {
@@ -27,11 +28,17 @@ ul {
     text-align: center;
     padding: 15px 10px;
     text-decoration: none;
+    color: yellow;
   }
   
   li a:hover {
-    background-color: yellowgreen;
+    border-bottom: 3px solid green;
   }
+.logo img{
+    float: right;
+    width: 5%;
+    height: 5%;
+}
 /*content*/
 .content-div{
     padding: 7%;
@@ -43,50 +50,56 @@ ul {
     background-color: rgba(0, 0, 0, 0.5);
 }
 .content-div{
-    background-image: url("../../assets/img/FEU.png");
+    background-color: black;
     height: 30%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
     width: 86%;
 }
 .text-div{
     color: rgb(255, 253, 253);
     padding: 6%;
-    width: 90%;
+    width: 55%;
     margin: 0;
     padding-left: 0%;  
 }
 .text-div h1{
     font-size: 50px;
-    padding: 10px;
-    width: 100%;
-    color: yellow;
+    padding: 15px;
+    width: 130%;
+    color: green;
+    text-shadow: 1px 1px  yellow;
 }
 .text-div p{
     font-size: 22px;
     padding: 30px;
+    width: 120%;
+    text-align: justify;
+}
+.image-div img{
     width: 110%;
+    height: 90%;
+    animation: spin3D 3s ease-in-out infinite; 
 }
-img{
-    width: 130%;
-    height: 100%;
-}
+@keyframes spin3D {
+    from { transform: rotateY(0deg) }
+    to { transform: rotateY(360deg) }
+  }
 .text-div button{
-    margin-left: 20%;
+    margin-left: 30%;
     padding: 15px 50px;
-    border: 4px solid yellow;
+    border: 1px solid yellow;
     border-radius: 4px;
-    background-color: green;
+    background-color: black;
+    color: green;
+    font-weight: 1px bold;
+    background-color: yellow;
 }
 .text-div button:hover{
-    background-color: yellow;
+    background-color: rgb(177, 177, 12);
 }
 /*footer*/
 .footer-div{
-    background-color: green;
+    background-color: black;
     color: #fff;
-    padding:25px;
+    padding:20px;
     text-align: center;
 }
