@@ -46,9 +46,6 @@
       </ol>
     </li>
     <li>
-      <a href="#rule,-practices-and-principles">Rules, Practices and Principles</a>
-    </li>
-    <li>
       <a href="#resources">Resources</a>
     </li>
   </ol>
@@ -60,13 +57,7 @@
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-Description of the project in details.
-
-Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+The project is a Grade Management System designed to compute the General Weighted Average (GWA) for a student across 5 subjects. Its purpose is to simplify the grade computation process by automatically calculating the GWA, eliminating the need for manual formula application. This reduces the chances of error and ensures accurate results since users only need to input the grades, and the system will handle the calculations.
 
 ### Key Components
 <!-- TODO: List of Key Components -->
@@ -81,39 +72,6 @@ Guiding Question:
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
 
-## Rules, Practices and Principles
-1. Always use `WD-` in the front of the Title of the Project for the Subject followed by your custom naming.
-2. Do not rename any .html files; always use `index.html` as the filename.
-3. Place Files in their respective folders.
-4. All file naming are in camel case.
-   - Camel case is naming format where there is no white space in separation of each words, the first word is in all lower case while the succeding words first letter are in upper followed by lower cased letters.
-   - ex.: buttonAnimatedStyle.css
-5. Use only `External CSS`.
-6. Renaming of Pages folder names are a must, and relates to what it is doing or data it holding.
-7. File Structure to follow below.
-
-```
-WD-ProjectName
-└─ assets
-|   └─ css
-|   |   └─ style.css
-|   └─ img
-|   |   └─ fileWith.jpeg/.jpg/.webp/.png
-|   └─ js
-|       └─ script.js
-└─ pages
-|  └─ pageName
-|     └─ assets
-|     |  └─ css
-|     |  |  └─ style.css
-|     |  └─ img
-|     |  |  └─ fileWith.jpeg/.jpg/.webp/.png
-|     |  └─ js
-|     |     └─ script.js
-|     └─ index.html
-└─ index.html
-└─ readme.md
-```
 
 ## Resources
 
