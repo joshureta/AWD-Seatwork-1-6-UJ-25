@@ -8,13 +8,14 @@
 .navbar-div{
   background-color: black;
     padding: 1px;
+    border: 2px solid green;
 }
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: BLACK;
+    background-color: rgba(0, 0, 0, 0.5);
   }
   
   li {
@@ -37,19 +38,19 @@ ul {
   }
 .logo img{
     float: right;
-    width: 5%;
-    height: 5%;
+    width: 4%;
+    height: 4%;
 }
 /*content*/
 .content-div{
     background-image: url("../img/FEUBG2.png");
-    height: 30%;
+    height: 40%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     width: 86%;
-    padding: 6%;
+    padding: 10%;
     width: auto;
     height: auto;
     background-color: rgba(0, 0, 0, 0.5);
@@ -93,5 +94,6 @@ th, td {
 /*footer*/
 .footer-div{
     background-color: black;
-    padding: 20px;
+    padding: 35px;
+    border: 2px solid green;
 }
