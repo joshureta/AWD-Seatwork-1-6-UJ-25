@@ -22,30 +22,27 @@
     </div>
     <!---content-->
     <div class ="content-div">
-    <!---TODO:DEMO-->
-    <h2>Grade Management System</h2>
-    <br>
-    <br>
-    <div class ="Input">
-    <label for="name">Student Name:</label>
-    <input type="text" id="name" required>
-    <br><br>
-    <label for="grades">Enter 5 Grades:</label>
-    <input type="text" id="grades" placeholder="85, 90, 78, 92, 88" required>
-    <br><br>
-    <button onclick="calculateGWA()">Calculate GWA</button>
-    </div>
-    <table id="resultTable">
+    <h2>GWA Calculator</h2>
+    <label for="studentName">Enter Student Name:</label>
+    <input type="text" id="studentName" placeholder="Student Name">
+    <table>
         <thead>
             <tr>
-                <th>Name</th>
-                <th>Grades</th>
-                <th>GWA</th>
+                <th>Subject</th>
+                <th>Number of Units</th>
+                <th>Final Grade</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="subjectInputs">
         </tbody>
     </table>
+    <button onclick="addSubject()">Add Subject</button>
+    <button onclick="calculateGWA()">Calculate GWA</button>
+    <button onclick="clearInputs()">Clear</button>
+    <br>
+    <h3>GWA Result</h3>
+    <br>
+    <p id="gwaResult"></p>
     </div>
     <!----footer-->
     <div class ="footer-div">

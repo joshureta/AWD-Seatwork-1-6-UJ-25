@@ -38,7 +38,7 @@ ul {
   
   li a:hover {
     background-color: darkgreen;
-    border-radius: 25px;
+    border-radius: 10px;
     opacity: 0.5;
   }
 .logo img{
@@ -49,7 +49,7 @@ ul {
 }
 /*content*/
 .content-div{
-    padding: 10%;
+    padding: 12%;
     display: flex;
     flex-direction: row;
     display:flex;
@@ -59,7 +59,7 @@ ul {
 }
 .content-div{
     background-color: black;
-    height: 30%;
+    height: 80%;
     width: auto;
 }
 .text-div{
@@ -82,7 +82,7 @@ ul {
     text-align: justify;
 }
 .image-div img{
-    width: 110%;
+    width: 120%;
     height: 90%;
     animation: spin3D 3s ease-in-out infinite; 
 }
@@ -94,7 +94,7 @@ ul {
 .footer-div{
     background-color: black;
     color: #fff;
-    padding:20px;
+    padding: 50px;
     text-align: center;
     border: 2px solid green;
 }
