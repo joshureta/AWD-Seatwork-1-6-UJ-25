@@ -33,15 +33,19 @@ ul {
     padding: 15px 10px;
     text-decoration: none;
     color: yellow;
+    
   }
   
   li a:hover {
-    border-bottom: 3px solid green;
+    background-color: darkgreen;
+    border-radius: 25px;
+    opacity: 0.5;
   }
 .logo img{
     float: right;
-    width: 4%;
-    height: 4%;
+    width: 5%;
+    height: 5%;
+
 }
 /*content*/
 .content-div{
