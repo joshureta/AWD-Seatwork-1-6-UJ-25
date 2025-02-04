@@ -90,19 +90,6 @@ ul {
     from { transform: rotateY(0deg) }
     to { transform: rotateY(360deg) }
   }
-.text-div button{
-    margin-left: 30%;
-    padding: 15px 50px;
-    border: 1px solid yellow;
-    border-radius: 4px;
-    background-color: black;
-    color: green;
-    font-weight: 1px bold;
-    background-color: yellow;
-}
-.text-div button:hover{
-    background-color: rgb(177, 177, 12);
-}
 /*footer*/
 .footer-div{
     background-color: black;
