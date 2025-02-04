@@ -52,7 +52,7 @@ ul {
     background-size: cover;
     background-position: center;
     width: 86%;
-    padding: 10%;
+    padding: 16%;
     width: auto;
     height: auto;
     background-color: rgba(0, 0, 0, 0.5);
@@ -96,6 +96,6 @@ th, td {
 /*footer*/
 .footer-div{
     background-color: black;
-    padding: 35px;
+    padding: 45px;
     border: 2px solid green;
 }
