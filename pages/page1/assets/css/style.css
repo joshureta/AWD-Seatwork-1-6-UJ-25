@@ -7,41 +7,42 @@
 /*Navbar*/
 .navbar-div{
   background-color: black;
-    padding: 1px;
-    border: 2px solid green;
+  padding: 1px;
+  border: 2px solid green;
 }
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:black;
+}
+
+li {
+  float: left;
+  padding-top: 1%;
+  padding-left: 2%;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  text-decoration: none;
+  color: yellow;
   
-  li {
-    float: left;
-    padding-top: 1%;
-    padding-left: 2%;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 15px 10px;
-    text-decoration: none;
-    color: yellow;
-  }
-  
-  li a:hover {
-    background-color: darkgreen;
-    border-radius: 10px;
-    opacity: 0.5;
-  }
+}
+
+li a:hover {
+  background-color: darkgreen;
+  border-radius: 10px;
+  opacity: 0.5;
+}
 .logo img{
-    float: right;
-    width: 5%;
-    height: 5%;
+  float: right;
+  width: 5%;
+  height: 5%;
 }
 /*content*/
 .content-div{
@@ -52,7 +53,7 @@ ul {
     background-size: cover;
     background-position: center;
     width: 86%;
-    padding: 16%;
+    padding: 15%;
     width: auto;
     height: auto;
     background-color: rgba(0, 0, 0, 0.5);
@@ -98,7 +99,7 @@ th, td {
 /*footer*/
 .footer-div{
     background-color: black;
-    padding: 45px;
+    padding: 35px;
     border: 2px solid green;
 }
 
