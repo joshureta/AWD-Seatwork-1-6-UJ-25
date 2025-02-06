@@ -5,13 +5,11 @@
 <br />
 <div align="center">
   <a href="https://github.com/zyx-0314/">
-  <!-- TODO: If you want to add logo or banner you can add it here -->
     <img src="./assets/img/feu_tamaraw.png" alt="Nyebe" width="130" height="100">
   </a>
-<!-- TODO: Change Title to the name of the title of your Project -->
   <h3 align="center">Grade Management</h3>
 </div>
-<!-- TODO: Make a short description -->
+
   
 <div align="center">
   This website can calculate the GWA (General Weighted Average) of your grade in different subjects or courses.
@@ -19,11 +17,9 @@
 
 <br />
 
-<!-- TODO: Change the zyx-0314 into your github username  -->
-<!-- TODO: Change the WD-Template-Project into the same name of your folder -->
 ![](https://visit-counter.vercel.app/counter.png?page=joshureta/AWD-Seatwork-1-6-UJ-25)
 
-[![wakatime](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8.svg)](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8)
+[![wakatime](https://wakatime.com/badge/user/2a1d413b-6cf6-4c09-aa52-736b23ee522e/project/211c15f1-5a73-49e0-a9d8-4fe5c7419111.svg)](https://wakatime.com/badge/user/2a1d413b-6cf6-4c09-aa52-736b23ee522e/project/211c15f1-5a73-49e0-a9d8-4fe5c7419111)
 
 ---
 
@@ -32,7 +28,7 @@
 <details>
   <summary>Click to expand</summary>
   <ol>
-    <li><a href="#Overview">Overview</a>
+    <li><a href="## 📌 Overview">Overview</a>
       <ul>
         <li><a href="#Features">Features</a></li>
         <li><a href="#Key-components">Key Components</a></li>
@@ -41,7 +37,7 @@
     </li>
     <li><a href="#project-structure">Project Structure</a></li>
     <li><a href="#how-to-use">How to Use</a></li>
-    <li><a href="#resources">Resources</a></li>
+    <li><a href="## 📚 Resources=">Resources</a></li>
   </ol>
 </details>
 
