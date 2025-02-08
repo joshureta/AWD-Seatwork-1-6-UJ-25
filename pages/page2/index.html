@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grade Management System</title>
     <!-------JS Link-->
-    <script src ="./assets/js/scripts.js"></script>
+    <script src ="../page2/assets/js/scripts.js"></script>
     <!------CSS Link-->
-      <link rel="stylesheet" href="../page1/assets/css/style.css">
+      <link rel="stylesheet" href= "../page2/assets/css/style.css">
 </head>
 <body>
     <!----Navbar-->
     <div class = "navbar-div">
         <ul>
             <li><a class="active" href="../../index.html">Home</a></li>
-            <li><a href="./index.html">GWA Calculator</a></li>
-            <li><a href ="../page2/index.html">Students</a></li>
+            <li><a href="../page1/index.html">GWA Calculator</a></li>
+            <li><a href ="./index.html">Students</a></li>
             <div class =logo>
                 <img src ="./assets/img/FEU_logo.png">
             </div>
@@ -23,29 +23,19 @@
     </div>
     <!---content-->
     <div class ="content-div">
-    <h2>GWA Calculator</h2>
-    <br>
-    <label for="studentName">Enter Student Name:</label>
-    <input type="text" id="studentName" placeholder="Student Name">
-    <table>
-        <thead>
-            <tr>
-                <th>Subject</th>
-                <th>Number of Units</th>
-                <th>Final Grade</th>
-            </tr>
-        </thead>
-        <tbody id="subjectInputs">
-        </tbody>
-    </table>
-    <br>
-    <button onclick="addSubject()">Add Subject</button>
-    <button onclick="calculateGWA()">Calculate GWA</button>
-    <button onclick="clearInputs()">Clear</button>
-    <br>
-    <h3>GWA Result</h3>
-    <br>
-    <p id="gwaResult"></p>
+        <h2>Stored Student GWA Records</h2>
+        <br>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Total GWA</th>
+                </tr>
+            </thead>
+            <tbody id="studentsTableBody"></tbody>
+        </table>
+        <br>
+        <button onclick="clearStoredData()">Clear All Data</button>
     </div>
     <!----footer-->
     <div class ="footer-div">

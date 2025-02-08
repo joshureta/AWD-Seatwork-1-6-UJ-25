@@ -1,6 +1,7 @@
+// Load stored data from localStorage
 let storedData = JSON.parse(localStorage.getItem("studentsData")) || [];
 
-
+// Function to add a new subject row
 function addSubject() {
     let row = `<tr>
         <td><input type="text" class="subject" placeholder="Subject"></td>
@@ -10,6 +11,7 @@ function addSubject() {
     document.getElementById("subjectInputs").innerHTML += row;
 }
 
+// Function to calculate GWA
 function calculateGWA() {
     let name = document.getElementById("studentName").value.trim();
     if (name === "") {
@@ -38,26 +40,15 @@ function calculateGWA() {
     let gwa = (totalWeightedGrades / totalUnits).toFixed(2);
     document.getElementById("gwaResult").innerHTML = `<strong>${name}'s GWA:</strong> ${gwa}`;
 
-
+    // Store data in localStorage
     let studentData = { name: name, gwa: gwa };
     storedData.push(studentData);
     localStorage.setItem("studentsData", JSON.stringify(storedData));
 }
 
+// Function to clear inputs (but keep stored data)
 function clearInputs() {
     document.getElementById("studentName").value = "";
     document.getElementById("subjectInputs").innerHTML = "";
     document.getElementById("gwaResult").innerHTML = "";
-    localStorage.removeItem("studentsData");
-    storedData = [];
 }
-
-function displayStoredData(){
-    let gwaResultElement = document.getElementById ("gwaResult");
-    gwaResultElement.innerHTML = "";
-
-    storedData.forEach(student => {
-        gwaResultElement.innerHTML +=  `<p><strong>${student.name}'s GWA:</strong> ${student.gwa}</p>`;
-    });
-    }
-displayStoredData();
