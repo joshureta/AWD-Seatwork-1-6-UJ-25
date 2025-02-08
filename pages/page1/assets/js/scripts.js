@@ -1,23 +1,18 @@
-let storedData = JSON.parse (localStorage.getItem("studentsData")) || [];
+let storedData = JSON.parse(localStorage.getItem("studentsData")) || [];
 
-if (storedData.length > 0 ){
-    storedData.forEach(student =>{
-        displayGWA(student.name, student.gwa)
-    });
-}
 
 function addSubject() {
     let row = `<tr>
         <td><input type="text" class="subject" placeholder="Subject"></td>
-        <td><input type="number" class="units" placeholder="Units"></td>
-        <td><input type="number" class="grades" placeholder="Grades"></td>
+        <td><input type="number" class="units" placeholder="Units" min="1"></td>
+        <td><input type="number" class="grades" placeholder="Grades" min="0" max="100"></td>
     </tr>`;
     document.getElementById("subjectInputs").innerHTML += row;
 }
 
 function calculateGWA() {
-    let name = document.getElementById("studentName").value;
-    if (name.trim() === "") {
+    let name = document.getElementById("studentName").value.trim();
+    if (name === "") {
         alert("Please enter a student name.");
         return;
     }
@@ -43,14 +38,11 @@ function calculateGWA() {
     let gwa = (totalWeightedGrades / totalUnits).toFixed(2);
     document.getElementById("gwaResult").innerHTML = `<strong>${name}'s GWA:</strong> ${gwa}`;
 
+
     let studentData = { name: name, gwa: gwa };
     storedData.push(studentData);
     localStorage.setItem("studentsData", JSON.stringify(storedData));
 }
-function displayGWA(name, gwa){
-    document.getElementById("gwaResult").innerHTML += `<p><strong>${name}'s GWA:</strong> ${gwa}</p>`;
-}
-
 
 function clearInputs() {
     document.getElementById("studentName").value = "";
@@ -59,3 +51,13 @@ function clearInputs() {
     localStorage.removeItem("studentsData");
     storedData = [];
 }
+
+function displayStoredData(){
+    let gwaResultElement = document.getElementById ("gwaResult");
+    gwaResultElement.innerHTML = "";
+
+    storedData.forEach(student => {
+        gwaResultElement.innerHTML +=  `<p><strong>${student.name}'s GWA:</strong> ${student.gwa}</p>`;
+    });
+    }
+displayStoredData();
