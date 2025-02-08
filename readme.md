@@ -50,7 +50,8 @@ The **Grade Management System** simplifies the process of computing the General 
 ✅ GWA Calculator – Computes the GWA based on user-inputted grades and units.  
 ✅ Dynamic Input Fields – Users can add subjects dynamically.  
 ✅ Clear Inputs – Reset all fields for a fresh calculation.  
-✅ Responsive Design – Optimized for different devices.  
+✅ Responsive Design – Optimized for different devices.   
+✅ Students' Records Page – Stores and displays student records for future reference. 
 
 ### 🔑 Key Components
 - Multipage website structure
@@ -88,6 +89,16 @@ The **Grade Management System** simplifies the process of computing the General 
 │   │   │   ├── FEU_logo.png   # Logo image
 │   │   │   ├── FEUBG2.png     # Background image
 │   │   ├── index.html         # GWA Calculator page
+|   ├── 📁 page2
+│   │   ├── 📁 assets
+│   │   ├── 📁 css
+│   │   │   ├── style.css      # Page-specific styles
+│   │   ├── 📁 js
+│   │   │   ├── scripts.js     # Page-specific scripts
+│   │   ├── 📁 img
+│   │   │   ├── FEU_logo.png   # Logo image
+│   │   │   ├── FEUBG2.png     # Background image
+│   │   ├── index.html         # Students Records page
 │── index.html                 # Main homepage
 │── README.md                  # Project documentation
 ```
@@ -95,13 +106,16 @@ The **Grade Management System** simplifies the process of computing the General 
 ---
 
 ## 📖 How to Use
-1. Open `index.html` in a web browser.
-2. Enter the student's name.
-3. Input subject names, corresponding units, and final grades.
-4. Click **"Add Subject"** to input more subjects.
-5. Click **"Calculate GWA"** to compute the result.
-6. Click **"Clear"** to reset inputs.
-
+1. **Open the website** by launching `index.html` in a browser.  
+2. **Navigate to the GWA Calculator** to compute grades:
+   - Enter the student's name.
+   - Input subjects, units, and grades.
+   - Click **"Add Subject"** to add more subjects.
+   - Click **"Calculate GWA"** to compute the result.
+   - Click **"Clear"** to reset inputs.
+3. **Navigate to the Students' Records Page** to view saved records.
+   - The page displays all stored GWA calculations.
+   - Records persist even after refreshing the page.
 ---
 
 ## 📚 Resources
