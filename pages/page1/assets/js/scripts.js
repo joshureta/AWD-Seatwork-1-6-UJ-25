@@ -1,3 +1,11 @@
+let storedData = JSON.parse (localStorage.getItem("studentsData")) || [];
+
+if (storedData.length > 0 ){
+    storedData.forEach(student =>{
+        displayGWA(student.name, student.gwa)
+    });
+}
+
 function addSubject() {
     let row = `<tr>
         <td><input type="text" class="subject" placeholder="Subject"></td>
@@ -34,10 +42,20 @@ function calculateGWA() {
 
     let gwa = (totalWeightedGrades / totalUnits).toFixed(2);
     document.getElementById("gwaResult").innerHTML = `<strong>${name}'s GWA:</strong> ${gwa}`;
+
+    let studentData = { name: name, gwa: gwa };
+    storedData.push(studentData);
+    localStorage.setItem("studentsData", JSON.stringify(storedData));
 }
+function displayGWA(name, gwa){
+    document.getElementById("gwaResult").innerHTML += `<p><strong>${name}'s GWA:</strong> ${gwa}</p>`;
+}
+
 
 function clearInputs() {
     document.getElementById("studentName").value = "";
     document.getElementById("subjectInputs").innerHTML = "";
     document.getElementById("gwaResult").innerHTML = "";
+    localStorage.removeItem("studentsData");
+    storedData = [];
 }
