@@ -9,7 +9,7 @@ body{
 /*Navbar*/
 .navbar-div{
     background-color: black;
-    padding: 0px;
+    padding: 1px;
     border: 2px solid green;
 }
 ul {
