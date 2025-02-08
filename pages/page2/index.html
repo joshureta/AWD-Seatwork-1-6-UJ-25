@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Management System</title>
+    <!-------JS Link-->
+    <script src ="./assets/js/scripts.js"></script>
+    <!------CSS Link-->
+      <link rel="stylesheet" href="../page1/assets/css/style.css">
+</head>
+<body>
+    <!----Navbar-->
+    <div class = "navbar-div">
+        <ul>
+            <li><a class="active" href="../../index.html">Home</a></li>
+            <li><a href="./index.html">GWA Calculator</a></li>
+            <div class =logo>
+                <img src ="./assets/img/FEU_logo.png">
+            </div>
+          </ul>
+    </div>
+    <!---content-->
+    <div class ="content-div">
+    <h2>GWA Calculator</h2>
+    <br>
+    <label for="studentName">Enter Student Name:</label>
+    <input type="text" id="studentName" placeholder="Student Name">
+    <table>
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>Number of Units</th>
+                <th>Final Grade</th>
+            </tr>
+        </thead>
+        <tbody id="subjectInputs">
+        </tbody>
+    </table>
+    <br>
+    <button onclick="addSubject()">Add Subject</button>
+    <button onclick="calculateGWA()">Calculate GWA</button>
+    <button onclick="clearInputs()">Clear</button>
+    <br>
+    <h3>GWA Result</h3>
+    <br>
+    <p id="gwaResult"></p>
+    </div>
+    <!----footer-->
+    <div class ="footer-div">
+    </div>
+</body>
+</html>
